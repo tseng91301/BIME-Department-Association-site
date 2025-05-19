@@ -1,0 +1,12 @@
+.btn-cancel {
+    background-color: #ff9879;
+}
+
+.btn-confirm {
+    background-color: #6aff51;
+}
+
+input {
+    padding: 5px;
+    background-color: #f3f3f3;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約紀錄</title>
+    <link rel="stylesheet" href="res/style.css">
+</head>
+<body>
+    <div class="floating-window floating-window-hidden" id="floating-window"></div>
+    <h1>您的預約紀錄如下：</h1>
+    <div id="book-record-progress" class="section-block section-block-scroll" style="flex-direction: row; align-items: flex-start;">
+        <h3>正在進行的預約</h3>
+        <table class="data-table book-record-table">
+            <tbody id="book-record-progress-tbody">
+                <tr>
+                    <td>日期</td><td>開始時間</td><td>結束時間</td><td>狀態</td><td>操作</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="section-block">
+        <div class="tools-arr" >
+            <a href="index.html" >回預約系統頁面</a>
+            <a href="/index.html">回首頁</a>
+        </div>
+    </div>
+    <div id="book-record-history" class="section-block section-block-scroll" style="flex-direction: row; align-items: flex-start;">
+        <h3>歷史預約</h3>
+        <table class="data-table book-record-table">
+            <tbody id="book-record-history-tbody">
+                <tr>
+                    <td>日期</td><td>開始時間</td><td>結束時間</td><td>狀態</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="qr-code-spawner-html" style="display: none;">
+        <div id="book-qrP-qr" class="qr-show"></div>
+        <p id="book-qrP-rid"></p>
+        <p id="book-qrP-real-name"></p>
+        <p id="book-qrP-student-id"></p>
+        <p id="book-qrP-start-time"></p>
+        <p id="book-qrP-end-time"></p>
+        <button class="btn btn-normal" onclick="close_float()">關閉</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="res/basic_func.js"></script>
+    <script src="res/script.js"></script>
+    <script src="res/book_check.js"></script>
+</body>
+</html>

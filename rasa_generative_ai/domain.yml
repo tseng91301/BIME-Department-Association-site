@@ -1,0 +1,67 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_weather
+  - ask_bime_study_group
+
+entities:
+  - location
+  - date
+  - thing_to_know
+
+slots:
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+
+  date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date
+
+  thing_to_know:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: thing_to_know
+
+
+responses:
+  utter_greet:
+  - text: "嗨！今天過的怎麼樣呢？？"
+
+  utter_cheer_up:
+  - text: "別難過！生機系系學會永遠與您同在唷~"
+    # image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "不知道這是否有解決您的問題？"
+
+  utter_happy:
+  - text: "那真是太棒了！希望你天天都能那麼開心"
+
+  utter_goodbye:
+  - text: "掰掰！！"
+
+  utter_iamabot:
+  - text: "我是一個以Rasa語言學習框架為架構，由台大生機系學會開發的聊天機器人，可以為您回答與系學會相關的問題~\nWarning: 由機器人所講出的言論不一定是正確的，僅供參考"
+
+  utter_response_about_bime_department_society:
+  - text: "我們是台大生物機電工程學系的系學會，我們的使命是提供各位更加方便的學習環境、資源。也會不定期舉辦有趣的活動，讓大學生活多采多姿！\n想了解更多內容，可以到我們的官網或Facebook看看\n官網連結: https://ntu-bime-linebot.onrender.com/index.html \nFacebook 連結: https://www.facebook.com/ntubimesa/?locale=zh_TW"
+
+actions:
+  - action_get_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

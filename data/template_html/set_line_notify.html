@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設置Line Notification</title>
+</head>
+<body>
+    <h1>請協助我們完成以下動作：</h1>
+    <h3>開通 Line Notify</h3>
+    <p>我們的Line Bot只能被動處理使用者發送的訊息，因此需要您打開Line Notify權限，這樣若有最新消息，才能在第一時間通知您</p>
+    <p>放心，授予Line Notify通知權限並不會洩漏各位的個資，我們十分注重您的隱私權</p>
+    <p>之後仍可至「通知設定」將Line Notify權限移除</p>
+    <form action="/profile/set/index.php" method="post" id="access-notify-form"></form>
+    <div class="button-bar">
+        <a href="/index.html">但是我拒絕 :(</a>
+        <button id="access-notify-btn" onclick="access_notify();">前往設定</button>
+    </div>
+    <script>
+        function access_notify(){
+            window.location.href="https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=KPvbmdv1KmZTpd4u2uGDP3&redirect_uri=https://ntu-bime-linebot.onrender.com/profile/notify/index.php&scope=notify&state=fsdfdsgwrgwgrehs";
+        }
+        
+    </script>
+</body>
+<style>
+    body {
+        padding: 25px;
+    }
+
+    .button-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .button-bar a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #787878;
+    }
+
+    .button-bar button {
+        padding: 10px;
+        font-size: 18px;
+        background-color: #007be7;
+        color: white;
+        border-color: white;
+        border-radius: 20px;
+        font-weight: 600;
+    }
+</style>
+</html>

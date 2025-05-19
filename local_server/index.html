@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/module/css/font-set.css" rel="stylesheet">
+    <link href="/info/style.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script id="size-change-js"></script>
+    <div class="floating">
+        <span class="ti-close floating-close"></span>
+        <div class="floating-content">
+            
+        </div>
+    </div>
+    <script id="floating-js"></script>
+    <div class="page">
+        <div id="page-top" class="page-top"></div>
+        <div class="page-center" id="page-center">
+            <div id="home-intro">
+                <h2>這邊終於不再空空如也!!!</h2>
+                <p>這非常值得我們慶祝一下，一起來<a href="https://www.pizzahut.com.tw/" target="_blank" style="color: black; text-decoration: none;">吃個披薩🍕🍟🍻</a></p>
+            </div>
+            <div id="function-bar" >
+                <div class="function-cell">
+                    <div class="flex-left">
+                        <h3 class="function-title">功能 1</h3>
+                        <p class="function-description">這是功能 1 的說明</p>
+                    </div>
+                    <div class="flex-right">
+                        <div class="function-link">
+                            <span class="ti-arrow-top-right" ></span>
+                            <a class="" href="#"> 立即前往</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="function-cell">
+                    <div class="flex-left">
+                        <h3 class="function-title">創客空間預約系統</h3>
+                        <p class="function-description">一個方便的創客空間借用登記系統</p>
+                    </div>
+                    <div class="flex-right">
+                        <div class="function-link">
+                            <span class="ti-arrow-top-right" ></span>
+                            <a class="" href="/reservation/maker_space/index.html"> 立即前往</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="function-cell">
+                    <div class="flex-left">
+                        <h3 class="function-title">更多其他功能</h3>
+                        <p class="function-description">還在想要做什麼...</p>
+                    </div>
+                    <div class="flex-right">
+                        <div class="function-link">
+                            <span class="ti-arrow-top-right" ></span>
+                            <a class="" href="mailto: tseng91301@gmail.com"> 給我點建議唄</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- div class="page-center" -->
+        <div class="page-footer" id="page-footer"></div>
+    </div>
+    <script src="/module/js/resource_loader.js"></script>
+    <script>
+        $("#page-top").load("/module/top.php");
+    </script>
+    <style id="themify-icons"></style>
+    <style id="global-style"></style>
+    
+</body>
+</html>

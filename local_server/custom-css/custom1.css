@@ -1,0 +1,9 @@
+.col-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#developer-login-btn p {
+    margin-top: revert;
+}

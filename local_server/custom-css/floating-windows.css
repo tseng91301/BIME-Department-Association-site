@@ -1,0 +1,49 @@
+.floating {
+    position: fixed;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 30px;
+    border: 10px;
+    border-radius: 20px;
+    border-style: outset;
+    display: none;
+}
+
+.floating-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 3px;
+    transform: translate(-10px, 10px);
+}
+
+.floating-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.floating-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.floating-content form * {
+    margin: 6px;
+}
+
+.floating-content form input,button {
+    border: 3px;
+    border-radius: 7px;
+    border-style: inset;
+}

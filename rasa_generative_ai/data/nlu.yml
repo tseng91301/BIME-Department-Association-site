@@ -1,0 +1,134 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - 今天真開心！
+    - 比賽又贏了
+    - 今天超棒的！
+    - 又是快樂的一天：)
+    - 超開心的
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - 我好難過...
+    - 我好傷心
+    - 哭哭
+    - 哭出來
+    - 教授這裡風好大，我好害怕
+    - 今天水逆
+    - 又被當了...
+    - 8-1
+    - e04
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_weather
+  examples: |
+    - [今天](date)[台北](location)天氣
+    - [台北](location)天氣
+    - [台北](location)[今天](date)天氣
+    - 天氣狀況
+    - [明天](date)的天氣
+    - [雲林](location)天氣狀況
+    - 我要看[彰化](location)天氣
+    - How is the weather [today](date)?
+    - How is the weather [tomorrow](date) at [Taipei](location)?
+    - weather in [Nantou](location)?
+    - weather in [Chanhwa](location)?
+    - weather in [Yilan](location)?
+    - weather in [Matzu](location)?
+    - what is the weather like in [Taoyuan](location) [yesterday](date)?
+
+- intent: ask_bime_study_group
+  examples: |
+    - 我想要了解[系學會](thing_to_know)
+    - 不知道[系學會](thing_to_know)都在做什麼
+    - [系學會](thing_to_know)在幹嘛
+    - [生機系系學會](thing_to_know)
+    - [系學會](thing_to_know)
+    - I want to learn about our [department society](thing_to_know)
+    - I want to access information of our [department society](thing_to_know)
+    - Information about [department society](thing_to_know)
+    - [department society](thing_to_know)?

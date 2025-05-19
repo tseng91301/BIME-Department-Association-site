@@ -1,0 +1,8 @@
+Status code: 
+[E0]: 尚未登入
+[E1]: JSON decode錯誤
+[E2]: 資料未填寫完全
+[E3]: mySQL資料庫錯誤
+[E4]: 未指定取消的rid
+
+[R0]: 預約成功

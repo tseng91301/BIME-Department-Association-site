@@ -1,0 +1,189 @@
+/* Global config */
+
+body {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+}
+
+.section-block {
+    background-color: #434343;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-block-scroll {
+    overflow: scroll;
+}
+
+.data-table td {
+    border-bottom: 1px solid;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border-bottom-color: #b7b7b7;
+    font-weight: 800;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-normal {
+    background-color: #3453ff;
+    color: white;
+}
+
+/* 隱藏原始 checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* 自定義圓形的 checkbox 樣式 */
+.custom-checkbox {
+    display: inline-block;
+    width: 15px; /* 調整大小 */
+    height: 15px; /* 調整大小 */
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #ffffff;
+    border-radius: 50%; /* 圓形 */
+    position: relative;
+    cursor: pointer;
+}
+
+/* 當 checkbox 被選中時 */
+input[type="checkbox"]:checked + .custom-checkbox {
+    content: '✔';
+}
+
+/* 自定義 checkbox 的打勾樣式 (使用 :after) */
+.custom-checkbox:after {
+    content: ''; /* 初始狀態為空 */
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* 當 checkbox 被選中時顯示 '√' */
+input[type="checkbox"]:checked + .custom-checkbox:after {
+    content: '√';
+    display: block;
+}
+
+.tools-arr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tools-arr * {
+    margin: 15px;
+}
+
+/* index.html */
+
+.clock {
+    text-align: center;
+}
+
+.book-form p {
+    font-size: 18px;
+}
+
+.date-selection {
+    width: 250px;
+    height: 25px;
+    padding: 10px;
+    border: 3px inset;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 800;
+}
+
+.time-selection {
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    border: 3px inset;
+    border-radius: 15px;
+}
+
+.book-form button {
+    width: 60px;
+    padding: 7px;
+    border: 2px inset;
+    border-radius: 10px;
+    background-color: #0647ff;
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+
+h1 {
+    font-size: 35px;
+}
+
+/* book_check.html*/
+
+.floating-window {
+    position: fixed;
+    background-color: #2d2d2d;
+    min-width: 250px;
+    min-height: 400px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floating-window-hidden {
+    display: none;
+}
+
+.qr-show {
+    padding: 13px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.book-record-table {
+    min-width: 600px;
+}

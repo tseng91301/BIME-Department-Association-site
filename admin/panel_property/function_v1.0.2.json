@@ -1,0 +1,33 @@
+{
+    "id": "richmenu-8d594ccc300fa0cf14fc29680f4fda0e",
+    "size": {"width": 2500, "height": 1686},
+    "selected": "true",
+    "name": "main_functions",
+    "chatBarText": "功能選單",
+    "areas":[
+        {
+          "bounds": {"x": 170, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "uri", "uri": "https://ntu-bime-linebot.onrender.com/reservation/maker_space/index.html"}
+        },
+        {
+          "bounds": {"x": 920, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "uri", "uri": "https://ntu-bime-linebot.onrender.com/profile/index.php"}
+        },
+        {
+          "bounds": {"x": 1660, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "uri", "uri": "https://ntu-bime-linebot.onrender.com/profile/notify/index.php"}
+        },
+        {
+          "bounds": {"x": 170, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "contact with us"}
+        },
+        {
+          "bounds": {"x": 920, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "help"}
+        },
+        {
+          "bounds": {"x": 1660, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "more"}
+        }
+    ]
+  }

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Mamelon";
+    src: url("/fonts/Mamelon.otf")  format('opentype');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: "WenQuanYi-Bitmap";
+    src: url("/fonts/WenQuanYi.Bitmap.Song.16px.ttf") format('truetype');
+}

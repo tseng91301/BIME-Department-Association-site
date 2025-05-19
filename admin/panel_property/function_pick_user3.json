@@ -1,0 +1,33 @@
+{
+    "id": "richmenu-79cf1a11aecce23753899f6617f57331",
+    "size": {"width": 2500, "height": 1686},
+    "selected": "true",
+    "name": "main_functions",
+    "chatBarText": "功能選單",
+    "areas":[
+        {
+          "bounds": {"x": 170, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "access_reservation"}
+        },
+        {
+          "bounds": {"x": 920, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "uri", "uri": "https://ntu-bime-linebot.onrender.com/profile/index.php"}
+        },
+        {
+          "bounds": {"x": 1660, "y": 100, "width": 700, "height": 780},
+          "action": {"type": "uri", "uri": "https://ntu-bime-linebot.onrender.com/profile/notify/index.php"}
+        },
+        {
+          "bounds": {"x": 170, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "mahjong"}
+        },
+        {
+          "bounds": {"x": 920, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "help"}
+        },
+        {
+          "bounds": {"x": 1660, "y": 900, "width": 700, "height": 780},
+          "action": {"type": "message", "text": "more"}
+        }
+    ]
+  }

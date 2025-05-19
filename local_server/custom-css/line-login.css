@@ -1,0 +1,15 @@
+#line-login-btn {
+    background-image: url(/images/line-login.png);
+    background-size: cover;
+    background-position: center;
+    width: 103px;
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#line-login-btn p{
+    margin-bottom: 1rem;
+    margin-right: 12px;
+    margin-top: 3px;
+}

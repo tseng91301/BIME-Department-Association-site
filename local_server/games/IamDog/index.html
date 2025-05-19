@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好玩的遊戲</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <button id="movable" class="center">被按到作者就是狗！</button>
+    <div id="panel" class="center-bottom">
+        <button id="cancel">我認輸嗚嗚</button>
+        <button id="win">我贏了哈哈哈</button>
+    </div>
+    
+</body>
+<script>
+    function transform_bt(){
+        var tr_x = Math.floor(Math.random() * window.innerWidth);
+        var tr_y = Math.floor(Math.random() * window.innerHeight);
+        var offset = $("#movable").offset();
+        var size_x = Math.floor(Math.random() * 100);
+        var size_y = Math.floor(Math.random() * 40);
+        if(Math.abs(tr_x - offset.left) <= 200 || Math.abs(tr_y - offset.top) <= 100){
+            transform_bt();
+        }
+        console.log(tr_x);
+        console.log(tr_y);
+        $("#movable").html("🐶");
+        $("#movable").css({
+            "left" : tr_x,
+            "right": tr_y,
+            "width": size_x,
+            "height": size_y
+        });
+    }
+    $(document).ready(function(){
+        $("#movable").mouseenter(function(){
+            transform_bt();
+        });
+
+        $("#movable").click(function(){
+            alert("汪汪！");
+            $("#win").css({
+                "display": "block"
+            })
+        })
+
+        $("#cancel").click(function(){
+            alert("認輸了吧！！！！");
+            window.location.href = "/index.html";
+        });
+
+        $("#win").click(function(){
+            alert("好吧，我是狗🐶");
+            window.location.href = "/index.html";
+        })
+    })
+</script>
+<style>
+    #movable {
+        width: 200px;
+        height: 60px;
+        background-color: #92ff92;
+        border-color: #757575;
+    }
+
+    #win {
+        width: 100px;
+        height: 40px;
+        background-color: #92ff92;
+        display: none;
+    }
+
+    #cancel {
+        width: 100px;
+        height: 40px;
+        background: red;
+        color: white;
+    }
+
+    .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #panel {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .center-bottom {
+        position: absolute;
+        left: 50%;
+        bottom: 100px;
+        transform: translateX(-50%);
+    }
+</style>
+</html>

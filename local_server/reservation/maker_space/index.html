@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生機系創客空間預約系統</title>
+    <link rel="stylesheet" href="res/style.css">
+</head>
+<body>
+    <div class="clock">
+        <h1 id="time"> </h1>
+    </div>
+    <div class="book-form section-block">
+        <h2>請選擇要前往創客空間的日期及時間</h2>
+        <p>What is the date you want to come?</p>
+        <input type="date" id="book-date" class="date-selection" placeholder="Click to choose">
+        <p>Select a start time</p>
+        <input type="time" id="book-start-time" class="time-selection" placeholder="Click to choose">
+        <p>Select an end time</p>
+        <input type="time" id="book-end-time" class="time-selection" placeholder="Click to choose">
+        <style>
+            #book-start-time {
+                background-color: #95ff7d;
+            }
+
+            #book-end-time {
+                background-color: #ffc780;
+            }
+        </style>
+        <p style="font-size: 12px;display: flex;flex-direction: row;"><label>
+            <input type="checkbox" id="agree-with-eula">
+            <span class="custom-checkbox"></span>
+        </label>　我同意創客空間的預約及使用條款</p>
+        <button id="book-step-1" >預約</button>
+    </div>
+
+    <div class="book-tools section-block">
+        <h2>預約功能表列</h2>
+        <div class="tools-arr" >
+            <a href="book_check.html" >預約紀錄查詢</a>
+            <a href="/index.html" >回首頁</a>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="res/script.js"></script>
+</body>
+</html>

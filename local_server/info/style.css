@@ -1,0 +1,57 @@
+#home-intro {
+    width: calc(100% - 30px);
+    margin: 15px;
+    border-bottom: 2px groove;
+}
+
+#function-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.function-cell {
+    box-sizing: border-box;
+    max-width: 430px;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: calc(100% - 30px);
+}
+
+.flex-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.flex-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.function-cell {
+    font-family: 'WenQuanYi-Bitmap', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.function-description {
+    font-size: 20px;
+}
+
+.function-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.function-link * {
+    color: rgb(3, 137, 255);
+}

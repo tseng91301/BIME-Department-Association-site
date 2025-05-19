@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/themify-icons.css" rel="stylesheet">
+    <link href="/module/css/global-style.css" rel="stylesheet">  
+    <link href="/info/style.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/module/js/size-change.js"></script>
+    <div class="floating">
+        <span class="ti-close floating-close"></span>
+        <div class="floating-content"></div>
+        <script type="text/javascript" src="/module/js/dev-login.js"></script>
+    </div>
+    <div class="page">
+        <div id="page-top" class="page-top"></div>
+        <div class="page-center" id="page-center">
+            
+        </div><!-- div class="page-center" -->
+        <div class="page-footer" id="page-footer"></div>
+    </div>
+    <script src="/module/js/floating.js"></script>
+    <script>
+        $("#page-top").load("/module/top.php");
+        $("#page-footer").load("/module/foot.html");
+    </script>
+    
+</body>
+</html>
