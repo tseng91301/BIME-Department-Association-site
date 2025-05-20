@@ -15,6 +15,6 @@
 
 ### To Access This Site
 
-造訪網站： https://ntu-bime-linebot.onrender.com/index.html
-Line Bot 連結： https://line.me/R/ti/p/%40074sjmyz
-Line Bot ID： @074sjmyz
+* 造訪網站： https://ntu-bime-linebot.onrender.com/index.html
+* Line Bot 連結： https://line.me/R/ti/p/%40074sjmyz
+* Line Bot ID： @074sjmyz
